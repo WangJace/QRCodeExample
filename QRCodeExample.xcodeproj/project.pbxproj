@@ -15,6 +15,14 @@
 		96CB03A31CCE4B8800D851B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CB03A11CCE4B8800D851B7 /* LaunchScreen.storyboard */; };
 		96CB03AE1CCE4B8800D851B7 /* QRCodeExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03AD1CCE4B8800D851B7 /* QRCodeExampleTests.m */; };
 		96CB03B91CCE4B8900D851B7 /* QRCodeExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03B81CCE4B8900D851B7 /* QRCodeExampleUITests.m */; };
+		96CB03D81CCFA01A00D851B7 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03C81CCFA01A00D851B7 /* bitstream.c */; };
+		96CB03D91CCFA01A00D851B7 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03CA1CCFA01A00D851B7 /* mask.c */; };
+		96CB03DA1CCFA01A00D851B7 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03CC1CCFA01A00D851B7 /* qrencode.c */; };
+		96CB03DB1CCFA01A00D851B7 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03CE1CCFA01A00D851B7 /* qrinput.c */; };
+		96CB03DC1CCFA01A00D851B7 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03D01CCFA01A00D851B7 /* qrspec.c */; };
+		96CB03DD1CCFA01A00D851B7 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03D21CCFA01A00D851B7 /* rscode.c */; };
+		96CB03DE1CCFA01A00D851B7 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03D41CCFA01A00D851B7 /* split.c */; };
+		96CB03DF1CCFA01A00D851B7 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CB03D71CCFA01A00D851B7 /* UIImage+MDQRCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,22 @@
 		96CB03B41CCE4B8900D851B7 /* QRCodeExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CB03B81CCE4B8900D851B7 /* QRCodeExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeExampleUITests.m; sourceTree = "<group>"; };
 		96CB03BA1CCE4B8900D851B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CB03C81CCFA01A00D851B7 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		96CB03C91CCFA01A00D851B7 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		96CB03CA1CCFA01A00D851B7 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		96CB03CB1CCFA01A00D851B7 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		96CB03CC1CCFA01A00D851B7 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		96CB03CD1CCFA01A00D851B7 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		96CB03CE1CCFA01A00D851B7 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		96CB03CF1CCFA01A00D851B7 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		96CB03D01CCFA01A00D851B7 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		96CB03D11CCFA01A00D851B7 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		96CB03D21CCFA01A00D851B7 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		96CB03D31CCFA01A00D851B7 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		96CB03D41CCFA01A00D851B7 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		96CB03D51CCFA01A00D851B7 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		96CB03D61CCFA01A00D851B7 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		96CB03D71CCFA01A00D851B7 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,7 @@
 		96CB03921CCE4B8800D851B7 /* QRCodeExample */ = {
 			isa = PBXGroup;
 			children = (
+				96CB03C61CCFA01A00D851B7 /* QR */,
 				96CB03961CCE4B8800D851B7 /* AppDelegate.h */,
 				96CB03971CCE4B8800D851B7 /* AppDelegate.m */,
 				96CB03991CCE4B8800D851B7 /* ViewController.h */,
@@ -138,6 +163,37 @@
 				96CB03BA1CCE4B8900D851B7 /* Info.plist */,
 			);
 			path = QRCodeExampleUITests;
+			sourceTree = "<group>";
+		};
+		96CB03C61CCFA01A00D851B7 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				96CB03C71CCFA01A00D851B7 /* libqrencode */,
+				96CB03D61CCFA01A00D851B7 /* UIImage+MDQRCode.h */,
+				96CB03D71CCFA01A00D851B7 /* UIImage+MDQRCode.m */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		96CB03C71CCFA01A00D851B7 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				96CB03C81CCFA01A00D851B7 /* bitstream.c */,
+				96CB03C91CCFA01A00D851B7 /* bitstream.h */,
+				96CB03CA1CCFA01A00D851B7 /* mask.c */,
+				96CB03CB1CCFA01A00D851B7 /* mask.h */,
+				96CB03CC1CCFA01A00D851B7 /* qrencode.c */,
+				96CB03CD1CCFA01A00D851B7 /* qrencode.h */,
+				96CB03CE1CCFA01A00D851B7 /* qrinput.c */,
+				96CB03CF1CCFA01A00D851B7 /* qrinput.h */,
+				96CB03D01CCFA01A00D851B7 /* qrspec.c */,
+				96CB03D11CCFA01A00D851B7 /* qrspec.h */,
+				96CB03D21CCFA01A00D851B7 /* rscode.c */,
+				96CB03D31CCFA01A00D851B7 /* rscode.h */,
+				96CB03D41CCFA01A00D851B7 /* split.c */,
+				96CB03D51CCFA01A00D851B7 /* split.h */,
+			);
+			path = libqrencode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CB03DA1CCFA01A00D851B7 /* qrencode.c in Sources */,
+				96CB03DB1CCFA01A00D851B7 /* qrinput.c in Sources */,
+				96CB03DF1CCFA01A00D851B7 /* UIImage+MDQRCode.m in Sources */,
+				96CB03D91CCFA01A00D851B7 /* mask.c in Sources */,
 				96CB039B1CCE4B8800D851B7 /* ViewController.m in Sources */,
+				96CB03DD1CCFA01A00D851B7 /* rscode.c in Sources */,
 				96CB03981CCE4B8800D851B7 /* AppDelegate.m in Sources */,
 				96CB03951CCE4B8800D851B7 /* main.m in Sources */,
+				96CB03D81CCFA01A00D851B7 /* bitstream.c in Sources */,
+				96CB03DE1CCFA01A00D851B7 /* split.c in Sources */,
+				96CB03DC1CCFA01A00D851B7 /* qrspec.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +569,7 @@
 				96CB03BF1CCE4B8900D851B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96CB03C01CCE4B8900D851B7 /* Build configuration list for PBXNativeTarget "QRCodeExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +578,7 @@
 				96CB03C21CCE4B8900D851B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96CB03C31CCE4B8900D851B7 /* Build configuration list for PBXNativeTarget "QRCodeExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +587,7 @@
 				96CB03C51CCE4B8900D851B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "UIImage+MDQRCode.h"
 
-@interface ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
+@interface ViewController ()<AVCaptureMetadataOutputObjectsDelegate,UITextFieldDelegate>
 {
     NSTimer *_lineTimer;
     CALayer *_scanLineLayer;
@@ -17,6 +18,8 @@
 }
 @property (weak, nonatomic) IBOutlet UIView *qrBackgroundView;
 @property (weak, nonatomic) IBOutlet UITextView *qrStrTextView;
+@property (weak, nonatomic) IBOutlet UITextField *urlTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *qrImageView;
 //捕捉会话
 @property (strong, nonatomic) AVCaptureSession *captureSession;
 //展示layer
@@ -101,6 +104,21 @@
     }
 }
 
+- (IBAction)stopScanAction:(UIButton *)sender {
+    if ([_captureSession isRunning]) {
+        //停止扫描
+        [_captureSession stopRunning];
+        [_lineTimer invalidate];
+        _lineTimer = nil;
+        [_scanLineLayer removeFromSuperlayer];
+        _scanLineLayer = nil;
+    }
+}
+
+- (IBAction)generalQRImageAction:(UIButton *)sender {
+    _qrImageView.image = [UIImage mdQRCodeForString:_urlTextField.text size:CGRectGetWidth(_qrImageView.frame) fillColor:[UIColor grayColor]];
+}
+
 - (void)setAnimation
 {
     if (!_scanLineLayer) {
@@ -129,13 +147,28 @@
             [_lineTimer invalidate];
             _lineTimer = nil;
             [_scanLineLayer removeFromSuperlayer];
+            _scanLineLayer = nil;
         }
     }
+}
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    if ([_urlTextField isFirstResponder]) {
+        [_urlTextField resignFirstResponder];
+    }
 }
 
 @end
